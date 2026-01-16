@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://202.10.38.120:5000/api/products",
+  baseURL: "http://202.10.38.120:5000/",
   withCredentials: true, // ⬅⬅⬅ WAJIB
 });
 
