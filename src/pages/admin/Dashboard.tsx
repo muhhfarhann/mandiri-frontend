@@ -1,14 +1,7 @@
 // client/src/pages/admin/Dashboard.tsx
 import { useEffect, useState, Fragment } from "react";
 import api from "../../api";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import { Area, XAxis, YAxis, Tooltip } from "recharts";
 import { DollarSign, ShoppingBag, Box, X } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 import { useAuth } from "../../context/AuthContext";
@@ -43,7 +36,6 @@ const EMPTY_STATS: DashboardStats = {
 };
 
 const Dashboard = () => {
-  const goldColor = "#b99556";
   const { isAuthenticated, isLoading: authLoading } = useAuth();
 
   const [stats, setStats] = useState<DashboardStats>(EMPTY_STATS);
@@ -72,20 +64,6 @@ const Dashboard = () => {
       setStats(EMPTY_STATS); // ⬅⬅⬅ PENTING: jangan biarkan null
     } finally {
       setIsLoading(false);
-    }
-  };
-
-  const handleViewAll = async (type: "products" | "transactions") => {
-    try {
-      const endpoint =
-        type === "products"
-          ? "/admin/all-top-products"
-          : "/admin/all-transactions";
-      const response = await api.get(endpoint);
-      setModalData(response.data);
-      setShowModal({ open: true, type });
-    } catch {
-      alert("Gagal memuat data detail");
     }
   };
 

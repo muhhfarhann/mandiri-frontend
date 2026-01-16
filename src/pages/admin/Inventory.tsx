@@ -1,7 +1,7 @@
 // src/pages/admin/Inventory.tsx
 import { useState, useEffect } from "react";
 import api from "../../api";
-import { Plus, Search, ChevronDown, Edit, Trash2 } from "lucide-react";
+import { Plus, Search, Edit, Trash2 } from "lucide-react";
 import AddProductModal from "../../components/admin/AddProductModal";
 import EditProductModal from "../../components/admin/EditProductModal";
 

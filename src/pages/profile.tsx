@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import api from "../api";
 
 const Profile = () => {
-  const { user, isAuthenticated, isLoading, logout } = useAuth();
+  const { isAuthenticated, isLoading, logout } = useAuth();
   const [loadingSave, setLoadingSave] = useState(false);
 
   const [profileData, setProfileData] = useState({

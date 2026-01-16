@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import api from "../api";
 import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
-import { Filter, LayoutGrid, List, ShoppingCart } from "lucide-react";
+import { Filter, ShoppingCart } from "lucide-react";
 
 // --- Komponen Product Card ---
 const ProductCard = ({ product, addToCart }: any) => {
