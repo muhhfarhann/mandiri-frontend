@@ -32,7 +32,7 @@ const Profile = () => {
           });
 
           if (res.data.profile_pic) {
-            setPreviewUrl(`http://localhost:5000${res.data.profile_pic}`);
+            setPreviewUrl(`http://202.10.38.120:5000${res.data.profile_pic}`);
           }
         })
         .catch((err) => {

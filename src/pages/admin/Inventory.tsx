@@ -156,7 +156,7 @@ const Inventory = () => {
                       <img
                         src={
                           p.image_url
-                            ? `http://localhost:5000${p.image_url}`
+                            ? `http://202.10.38.120:5000${p.image_url}`
                             : "/placeholder.jpg"
                         }
                         className="h-10 w-10 rounded object-cover"

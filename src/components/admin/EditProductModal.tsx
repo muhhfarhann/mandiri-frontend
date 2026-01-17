@@ -114,7 +114,7 @@ const EditProductModal = ({ isOpen, onClose, product, onSuccess }: any) => {
                         src={
                           previewUrl ||
                           (product.image_url
-                            ? `http://localhost:5000${product.image_url}`
+                            ? `http://202.10.38.120:5000${product.image_url}`
                             : "/placeholder.jpg")
                         }
                         alt={product.nama}
