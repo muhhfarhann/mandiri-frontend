@@ -1,3 +1,4 @@
+// client/src/pages/profile.tsx
 import { useAuth } from "../context/AuthContext";
 import { Navigate } from "react-router-dom";
 import { LogOut, Camera, Save, Trash2 } from "lucide-react";

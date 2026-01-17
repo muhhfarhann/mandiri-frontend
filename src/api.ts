@@ -1,9 +1,10 @@
 // src/api.ts
 import axios from "axios";
+import { API_BASE_URL } from "./config";
 
 const api = axios.create({
-  baseURL: "http://202.10.38.120:5000/api",
-  withCredentials: true, // ⬅⬅⬅ WAJIB
+  baseURL: `${API_BASE_URL}/api`,
+  withCredentials: true,
 });
 
 export default api;

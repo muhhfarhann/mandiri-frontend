@@ -1,3 +1,4 @@
+// client/src/components/admin/Topbar.tsx
 import { Search, ChevronDown, Bell, Menu } from "lucide-react";
 
 type TopbarProps = {

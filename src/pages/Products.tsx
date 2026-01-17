@@ -33,7 +33,7 @@ const ProductCard = ({ product, addToCart }: any) => {
     }
 
     // 5. Gabungkan dengan URL Backend
-    return `http://localhost:5000${cleanUrl}`;
+    return `http://202.10.38.120:5000${cleanUrl}`;
   };
   const imageUrl = getImageUrl(product.image_url);
 
