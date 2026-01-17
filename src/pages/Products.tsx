@@ -14,7 +14,6 @@ const ProductCard = ({ product, addToCart }: any) => {
       minimumFractionDigits: 0,
     }).format(number);
 
-  // URL Gambar: Menggunakan URL dari database (localhost:5000/uploads/...) atau fallback ke public folder
   // --- LOGIC URL GAMBAR YANG LEBIH PINTAR ---
   const getImageUrl = (url: string | null) => {
     // 1. Jika di database kosong/null, pakai gambar default
