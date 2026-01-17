@@ -1,3 +1,4 @@
+// client/tsconfig.json
 {
   "compilerOptions": {
     "target": "ESNext",

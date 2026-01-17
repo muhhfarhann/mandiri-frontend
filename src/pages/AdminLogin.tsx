@@ -1,3 +1,4 @@
+// client/src/pages/AdminLogin.tsx
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 

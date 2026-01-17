@@ -1,3 +1,4 @@
+// client/src/pages/Checkout.tsx
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { Trash2, Plus, Minus, ArrowRight } from "lucide-react";

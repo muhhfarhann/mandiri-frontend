@@ -1,3 +1,4 @@
+// client/src/pages/Payment.tsx
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { useState, useEffect } from "react";

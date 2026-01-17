@@ -12,7 +12,9 @@ const ProtectedRoute = () => {
   }
 
   // 2. Jika sudah tidak loading, cek status
-  return isAuthenticated ? <Outlet /> : <Navigate to="/admin/login" replace />;
+  if (!isAuthenticated || user?.role !== "admin") {
+    return <Navigate to="/admin/login" replace />;
+  }
 };
 
 export default ProtectedRoute;

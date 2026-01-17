@@ -1,3 +1,4 @@
+// client/src/components/Navbar.tsx
 import { Link, useNavigate } from "react-router-dom";
 import { User, Search, ShoppingCart, Menu } from "lucide-react";
 import { useCart } from "../context/CartContext";

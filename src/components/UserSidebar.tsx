@@ -1,3 +1,4 @@
+// client/src/components/UserSidebar.tsx
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { X, Home, Package, User, ShoppingCart } from "lucide-react";
